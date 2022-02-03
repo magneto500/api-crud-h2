@@ -34,4 +34,9 @@ public class ControllerApi {
 				public Optional<Cars> findById(@PathVariable Long id) {
 								return service.findById(id);
 				}
+
+				@PostMapping("/add/4")
+				public void addCar() {
+								service.saveItem();
+				}
 }
