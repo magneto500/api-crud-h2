@@ -35,23 +35,16 @@ public class Service {
 								carRepo.deleteById(id);
 				}
 
-
-
-
-
-
-
-
 				@EventListener(ApplicationEvent.class)
 				public void addToDB(){
 								carRepo.save(new Cars(1L, Kolor.Czerwony, "Opel Astra J",
-																LocalDate.of(2014,01,14)));
+																LocalDate.of(2014, 1, 14)));
 
-								carRepo.save(new Cars(2L, Kolor.Czarny, "Opel Calibra",
-																LocalDate.of(1997,07,24)));
+								carRepo.save(new Cars(2L, Kolor.Czarny, "Suzuki SX4 S-Cross",
+																LocalDate.of(1997, 7, 24)));
 
-								carRepo.save(new Cars(3L, Kolor.Niebieski, "suzuki sx4 s-cross",
-																LocalDate.of(2006,06,1)));
+								carRepo.save(new Cars(3L, Kolor.Niebieski, "BMW 330i",
+																LocalDate.of(2006, 6, 1)));
 				}
 
 }

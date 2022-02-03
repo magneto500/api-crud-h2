@@ -19,7 +19,7 @@ public class Cars {
 				@GeneratedValue(strategy = GenerationType.AUTO)
 				private Long id;
 				@Enumerated(EnumType.STRING)
-				private Kolor color;
+				private Kolor kolor;
 				private String model;
 				private LocalDate dataProdukcji;
 }
